@@ -1,0 +1,19 @@
+quantum_system:
+  max_qubits: 32
+  simulation_precision: 1e-10
+  default_backend: "statevector"
+  
+api:
+  host: "0.0.0.0"
+  port: 8000
+  max_job_queue: 100
+  job_timeout: 300
+  
+algorithms:
+  grover_max_iterations: 100
+  shor_attempts: 10
+  vqe_max_iterations: 1000
+  
+visualization:
+  circuit_style: "default"
+  statevector_colormap: "plasma"
